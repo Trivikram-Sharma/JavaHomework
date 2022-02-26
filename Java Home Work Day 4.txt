@@ -1,0 +1,13 @@
+
+1. WHY WE HAVE TO CLOSE SCANNER OBJECT using obj.close();
+Ans:   Scanner object is closed once the reading of input is done, so that the memory is freed up to accomodate othere variables etc.
+
+2. Why we got error when we wrote obj.nextInt() in product class, 
+
+   which we had to change to:
+
+                  Integer.Parse(obj.nextLine());
+Ans: The error occurs as the input is taken including the next line, which is not going to be integer even after conversion/typecasting etc., as per the nextInt() method. Thus, nextLine() method was used with wrapper class instead.
+
+3. Can we create static class?
+Ans: Static classes might be created only if the class is defined inside another class.
